@@ -1,20 +1,22 @@
-
 @import "@/styles/home.css";
 
+:root {
+  --font-nunito: "Nunito", sans-serif;
+}
 
 html,
 body {
   margin: 0;
   overflow: hidden;
-  max-width: 100vw;
   overflow-x: hidden;
+  font-family: var(--font-nunito);
 }
 
 .container-body {
   width: 100%;
-  height: 100vh; /* Make sure the container takes up the full viewport height */
-  background-image: url('/img/background.svg'); /* Path to your image */
-  background-size: cover; /* Ensure the background covers the entire container */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the background from repeating */
+  height: 100vh;
+  background-image: url('/img/background.svg') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
