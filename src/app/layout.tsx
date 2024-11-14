@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "@/styles/globals.css"
+import "@/styles/globals.css";
+import Image from "next/image";
 
 const nunito = localFont({
   src: "./fonts/Nunito-Regular.otf",
@@ -22,7 +23,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${nunito.variable}`}>
         <div className="container-body">
-          {children}
+          <Image
+            src="/img/Background.svg"
+            alt="Descriptive text for screen readers"
+            layout="fill"
+            className="background-image"
+          />
+          <div className="children-content">
+            {children}
+          </div>
         </div>
       </body>
     </html>
