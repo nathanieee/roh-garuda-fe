@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/styles/globals.css"
-import Image from "next/image";
 
 const nunito = localFont({
   src: "./fonts/Nunito-Regular.otf",
