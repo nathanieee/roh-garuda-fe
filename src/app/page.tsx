@@ -1,5 +1,7 @@
-export default function Home() {
+import Home from "./Home";
+
+export default function Page() {
   return (
-   <div className="title-test"> test</div>
+   <Home/>
   );
 }
