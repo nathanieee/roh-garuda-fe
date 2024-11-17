@@ -1,17 +1,13 @@
 
 "use client";
 
+import Image from "next/image";
+
 import BorderSide from "@/components/side/side";
 import ImageCarousel from "@/components/slider/slider";
-import Image from "next/image";
-import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(false)
 
-  useEffect(() => {
-    
-  }, []);
   return (
     <div className="flex justify-center items-center w-full h-dvh">
       <div>
