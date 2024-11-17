@@ -30,3 +30,8 @@
 .border-color {
     background-color: #774E1F;
 }
+
+.shadow-image {
+    box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
