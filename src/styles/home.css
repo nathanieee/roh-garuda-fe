@@ -17,8 +17,10 @@
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    width: 1000px !important;
-    height: 700px;
+    width: 950px !important;
+    height: 530px !important;
+    margin-top: 84px;
+    margin-left: 25px; 
 }
 
 .swiper-button-next,
@@ -28,7 +30,7 @@
 }
 
 .border-color {
-    background-color: #774E1F;
+    background-color: black;
 }
 
 .shadow-image {

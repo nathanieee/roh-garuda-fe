@@ -1,10 +1,9 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade } from 'swiper/modules';
+import { Autoplay,Navigation } from 'swiper/modules';
 
-import 'swiper/css/effect-fade';
 import 'swiper/css';
-
+import 'swiper/css/navigation';
 
 import Image from 'next/image';
 
@@ -14,40 +13,47 @@ const ImageCarousel = () => {
   return (
     <div className="relative">
       <Image
-        src={'/img/Border.svg'}
+        src="/img/Border.svg"
         width={1250}
         height={800}
-        className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 shadow-image  border-color rounded-3xl'
-        alt='border-size'
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 shadow-image border-color rounded-3xl"
+        alt="border-size"
       />
       <Image
-        src={'/img/Logo.png'}
-        width={370} height={100}
+        src="/img/Logo.png"
+        width={370}
+        height={100}
         alt="Logo Roh Garuda"
-        className="absolute left-96 -top-32 z-20 " />
+        className="absolute left-96 -top-32 z-20"
+      />
       <Image
-        src={'/img/Character-1.png'}
-        width={600} height={100}
+        src="/img/Character-1.png"
+        width={600}
+        height={100}
         alt="Char 1"
-        className="absolute -left-14 z-20 -bottom-36 -translate-x-2/4 translate-y-1/4" />
+        className="absolute -left-14 z-20 -bottom-36 -translate-x-2/4 translate-y-1/4"
+      />
       <Image
-        src={'/img/Character-4.png'}
-        width={410} height={100} alt="Char 4"
-        className="absolute -left-16 -z-20 bottom-28 -translate-x-2/4 translate-y-1/4" />
+        src="/img/Character-4.png"
+        width={410}
+        height={100}
+        alt="Char 4"
+        className="absolute -left-16 -z-20 bottom-28 -translate-x-2/4 translate-y-1/4"
+      />
       <Image
-        src={'/img/Character-5.png'}
-        width={580} height={580}
+        src="/img/Character-5.png"
+        width={580}
+        height={580}
         alt="Char 5"
-        className="absolute -left-12 z-20 -top-44 -translate-x-2/4 translate-y-1/" />
+        className="absolute -left-12 z-20 -top-44 -translate-x-2/4 translate-y-1/"
+      />
       <Swiper
-        spaceBetween={30}
-        cssMode={true}
-        effect='fade'
-        modules={[Autoplay, EffectFade]}
+        modules={[Autoplay, Navigation]}
         centeredSlides={true}
+        loop={true}
         autoplay={{
-          delay: 2000,
-
+          delay: 5000,
+          disableOnInteraction: false,
         }}
         className="mySwiper"
       >
@@ -57,7 +63,6 @@ const ImageCarousel = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-
     </div>
   );
 };
