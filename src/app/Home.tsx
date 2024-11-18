@@ -10,7 +10,7 @@ import { Loader } from "@/components/loader/loader";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [imagesLoaded, setImagesLoaded] = useState(0);
-  const totalImages = 2; 
+  const totalImages = 2;
 
 
   const handleImageLoad = () => {
@@ -32,9 +32,8 @@ export default function Home() {
     <>
       {isLoading && <Loader preset="centered" />}
       <div
-        className={`flex justify-center items-center relative ${
-          isLoading ? "opacity-0" : "opacity-100 transition-opacity duration-500"
-        }`}
+        className={`flex justify-center items-center relative ${isLoading ? "opacity-0" : "opacity-100 transition-opacity duration-500"
+          }`}
       >
         <div>
           <ImageCarousel />
