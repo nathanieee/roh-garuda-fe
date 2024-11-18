@@ -37,12 +37,12 @@
 }
 
 .shadow-image {
-    box-shadow: -10px 20px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: -20px 20px 40px 6px rgba(0, 0, 0, 0.9);
   }
 
   .shadow-side {
-    box-shadow: 10px 22px 10px rgba(0, 0, 0, 0.6);
-    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-filter: drop-shadow(0px 20px 26px rgba(0, 0, 0, 1));
+    filter: drop-shadow(0px 20px 26px rgba(0, 0, 0, 1));
   }
   
   .preloader {

@@ -9,7 +9,7 @@ const BorderSide = () => {
         src="/img/Border-side.png"
         width={210.2}
         height={150}
-        className="-translate-x-9 drop-shadow-2xl shadow-side"
+        className="-translate-x-9 shadow-side"
         alt="border-side"
       />
     </div>
