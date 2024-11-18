@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import dynamic from "next/dynamic";
-
 
 
 type LoaderProps = {
