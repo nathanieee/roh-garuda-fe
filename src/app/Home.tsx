@@ -9,27 +9,28 @@ import ImageCarousel from "@/components/slider/slider";
 export default function Home() {
 
   return (
-    <div className="flex justify-center items-center w-full h-dvh">
+    <div className="flex justify-center items-center relative">
       <div>
         <ImageCarousel />
       </div>
-      <div className="relative ">
+      <BorderSide />
       <Image
-        src="/img/Character-3.png"
-        width={1000}
+        src="/img/Character-3.svg"
+        layout="intrinsic"
+        width={250}
         height={580}
         alt="Char 3"
-        className="absolute scale-125 -right-10 -z-20 -top-28 size-char-3"
+        className="absolute -right-1 -z-20 size-char-3 -top-5 translate-x-44 -rotate-12"
       />
       <Image
-        src="/img/Character-2.png"
-        width={1100}
-        height={760}
+        src="/img/Character-2.svg"
+        layout="intrinsic"
+        width={390}
+        height={800}
         alt="Char 2"
-        className="absolute scale-150 -bottom-20 -right-24 z-20"
+        className="absolute -bottom-28 z-20 right-0 translate-x-40"
       />
-        <BorderSide/>
-      </div>
     </div>
+
   );
 }
