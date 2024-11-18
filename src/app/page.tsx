@@ -2,6 +2,8 @@ import Home from "./Home";
 
 export default function Page() {
   return (
-   <Home/>
+    <div className="flex justify-center items-center h-dvh">
+      <Home/>
+    </div>
   );
 }
