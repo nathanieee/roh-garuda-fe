@@ -6,11 +6,13 @@
 .swiper {
     width: 1000px !important;
     height: 700px;
+    z-index: -10;
 }
 
 .swiper-slide {
     background-position: center;
     background-size: cover;
+    z-index: -10;
 }
 
 .swiper-slide img {
@@ -21,6 +23,7 @@
     height: 530px !important;
     margin-top: 84px;
     margin-left: 25px; 
+    z-index: -10;
 }
 
 .swiper-button-next,
@@ -30,10 +33,16 @@
 }
 
 .border-color {
-    background-color: black;
+    background-color: transparent;
 }
 
 .shadow-image {
-    box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: -10px 20px 10px rgba(0, 0, 0, 0.6);
   }
+
+  .shadow-side {
+    box-shadow: 10px 22px 10px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
   

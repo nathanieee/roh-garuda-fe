@@ -16,7 +16,7 @@ const ImageCarousel = () => {
         src="/img/Border.svg"
         width={1250}
         height={800}
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 shadow-image border-color rounded-3xl"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-color shadow-image rounded-3xl z-10"
         alt="border-size"
       />
       <Image
