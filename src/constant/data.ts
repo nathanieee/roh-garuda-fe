@@ -1,27 +1,27 @@
 export const DATA =  [
         {
           "id": 1,
-          "imageUrl": "/img/Logo.png",
+          "imageUrl": "/img/test.png",
           "alt": "image1"
         },
         {
           "id": 2,
-          "imageUrl": "/img/Logo.png",
+          "imageUrl": "/img/test-1.png",
           "alt": "image2"
         },
         {
           "id": 3,
-          "imageUrl": "/img/Logo.png",
+          "imageUrl": "/img/test-2.png",
           "alt": "image2"
         },
         {
           "id": 4,
-          "imageUrl": "/img/Logo.png",
+          "imageUrl": "/img/ONE.jpg",
           "alt": "image2"
         },
         {
           "id": 5,
-          "imageUrl": "/img/Logo.png",
+          "imageUrl": "/img/test.png",
           "alt": "image2"
         },
       ]
