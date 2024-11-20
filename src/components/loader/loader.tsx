@@ -5,7 +5,7 @@ type LoaderProps = {
   preset?: "centered" | "cover-page";
 };
 
-export const Loader = ({ preset = "centered" }: LoaderProps) => {
+const Loader = ({ preset = "centered" }: LoaderProps) => {
   useEffect(() => {
     let animation: AnimationItem | null = null; 
 
@@ -38,3 +38,5 @@ export const Loader = ({ preset = "centered" }: LoaderProps) => {
     </div>
   );
 };
+
+export default Loader
