@@ -20,13 +20,6 @@ const ImageCarousel = () => {
         alt="border-size"
       />
       <Image
-        src="/img/Logo.png"
-        width={370}
-        height={100}
-        alt="Logo Roh Garuda"
-        className="absolute left-96 -top-32 z-20"
-      />
-      <Image
         src="/img/Character-1.png"
         width={600}
         height={100}
