@@ -43,7 +43,7 @@ export default function Home() {
           width={370}
           height={100}
           alt="Logo Roh Garuda"
-          className="absolute top-0 z-20 -translate-y-32 xl:-translate-x-10"
+          className="absolute top-0 z-20 -translate-y-32 xl:-translate-x-10 shadow-logo"
         />
         <button ref={prevRef} className="bg-gray-200 p-2 absolute top-1/2 -translate-x-1/2 -translate-y-1/2 rounded z-50 left-16">Prev</button>
         <button ref={nextRef} className="bg-gray-200 p-2 absolute top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 rounded xl:right-56 md:right-4 right-4 lg:right-9">Next</button>
