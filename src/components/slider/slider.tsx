@@ -33,7 +33,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ prevRef, nextRef }) => {
           nextEl: nextRef?.current || undefined,
         }}
         onBeforeInit={(swiper) => {
-          if (swiper.params.navigation) {
+          if (typeof swiper.params.navigation === "object") {
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
           }
