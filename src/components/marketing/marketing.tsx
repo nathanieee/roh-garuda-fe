@@ -27,7 +27,7 @@ const Marketing: React.FC = () => {
               <Image
                 src={image.defaultSrc}
                 alt={`Default Image ${index + 1}`}
-                width={250}
+                width={220}
                 height={90}
                 className="shadow-sosmed transition-opacity duration-300 hover:opacity-75 hover:scale-95"
               />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Tooltip from "../tooltip/tooltip";
 
@@ -31,15 +31,34 @@ const HoverImageWithTooltip: React.FC = () => {
     },
   ];
 
+  const [tooltipAlignment, setTooltipAlignment] = useState<"right" | "bottom">("right");
+
+  useEffect(() => {
+    const updateAlignment = () => {
+      if (window.innerWidth < 1660) {
+        setTooltipAlignment("bottom");
+      } else {
+        setTooltipAlignment("right");
+      }
+    };
+
+    updateAlignment();
+    window.addEventListener("resize", updateAlignment);
+
+    return () => {
+      window.removeEventListener("resize", updateAlignment);
+    };
+  }, []);
+
   return (
-    <div className="space-y-5 flex flex-col gap-2 justify-center items-center">
+    <div className="flex xl:flex-col gap-6 justify-center items-center">
       {images.map((image, index) => (
-        <Tooltip key={index} text={image.tooltip} alignment={"right"}>
+        <Tooltip key={index} text={image.tooltip} alignment={tooltipAlignment}>
           <a
             href={image.href}
             target={image.href.startsWith("mailto:") ? "_self" : "_blank"} 
             rel="noopener noreferrer" 
-            className="relative cursor-pointer z-50 group"
+            className="relative cursor-pointer z-40 group"
           >
             <div className="relative">
               <Image

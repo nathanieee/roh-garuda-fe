@@ -38,3 +38,43 @@ body {
   position: relative;
   z-index: 1; 
 }
+
+.wrapper {
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 1440px) {
+  .wrapper {
+    margin-top: 50px !important;
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    transform: scale(0.43);
+  }
+}
+
+@media (max-width: 428px) {
+  .wrapper {
+    margin: auto;
+    transform: scale(0.32);
+  }
+}
+
+@media (max-width: 380px) {
+  .wrapper {
+    margin: auto;
+    transform: scale(0.26);
+  }
+}
+
+
+
