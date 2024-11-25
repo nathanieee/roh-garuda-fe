@@ -1,13 +1,13 @@
-import React, { RefObject } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import React, { RefObject } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/navigation";
 
-import Image from 'next/image';
+import Image from "next/image";
 
-import { DATA } from '@/constant/data';
+import { DATA } from "@/constant/data";
 
 interface ImageCarouselProps {
   prevRef: RefObject<HTMLButtonElement>;
@@ -21,7 +21,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ prevRef, nextRef }) => {
         src="/img/Border.svg"
         width={1250}
         height={800}
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-color shadow-image rounded-3xl z-10"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-color shadow-image rounded-3xl z-10 drop-shadow-2xl lg:drop-shadow-none"
         alt="border-size"
       />
       <Swiper
@@ -42,7 +42,12 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ prevRef, nextRef }) => {
       >
         {DATA.map((image, index) => (
           <SwiperSlide key={index}>
-            <Image src={image.imageUrl} width={600} height={490} alt={image.alt} />
+            <Image
+              src={image.imageUrl}
+              width={600}
+              height={490}
+              alt={image.alt}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

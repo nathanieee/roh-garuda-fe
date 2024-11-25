@@ -11,31 +11,33 @@ interface ImageData {
 
 const HoverImageWithTooltip: React.FC = () => {
   const images: ImageData[] = [
-    { 
-      defaultSrc: "/img/ig.svg", 
-      hoverSrc: "/img/ig-hover.svg", 
-      tooltip: "INSTAGRAM", 
-      href: "https://www.instagram.com/" 
+    {
+      defaultSrc: "/img/ig.svg",
+      hoverSrc: "/img/ig-hover.svg",
+      tooltip: "INSTAGRAM",
+      href: "https://www.instagram.com/",
     },
-    { 
-      defaultSrc: "/img/youtube.svg", 
-      hoverSrc: "/img/youtube-hover.svg", 
-      tooltip: "YOUTUBE", 
-      href: "https://www.youtube.com/" 
+    {
+      defaultSrc: "/img/youtube.svg",
+      hoverSrc: "/img/youtube-hover.svg",
+      tooltip: "YOUTUBE",
+      href: "https://www.youtube.com/",
     },
-    { 
-      defaultSrc: "/img/mail.svg", 
-      hoverSrc: "/img/mail-hover.svg", 
-      tooltip: "EMAIL US", 
-      href: "mailto:example@example.com" 
+    {
+      defaultSrc: "/img/mail.svg",
+      hoverSrc: "/img/mail-hover.svg",
+      tooltip: "EMAIL US",
+      href: "mailto:example@example.com",
     },
   ];
 
-  const [tooltipAlignment, setTooltipAlignment] = useState<"right" | "bottom">("right");
+  const [tooltipAlignment, setTooltipAlignment] = useState<"right" | "bottom">(
+    "right"
+  );
 
   useEffect(() => {
     const updateAlignment = () => {
-      if (window.innerWidth < 1660) {
+      if (window.innerWidth < 1400) {
         setTooltipAlignment("bottom");
       } else {
         setTooltipAlignment("right");
@@ -51,13 +53,13 @@ const HoverImageWithTooltip: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex xl:flex-col gap-6 justify-center items-center">
+    <div className="flex xl:flex-col gap-16 lg:gap-6 justify-center items-center">
       {images.map((image, index) => (
         <Tooltip key={index} text={image.tooltip} alignment={tooltipAlignment}>
           <a
             href={image.href}
-            target={image.href.startsWith("mailto:") ? "_self" : "_blank"} 
-            rel="noopener noreferrer" 
+            target={image.href.startsWith("mailto:") ? "_self" : "_blank"}
+            rel="noopener noreferrer"
             className="relative cursor-pointer z-40 group"
           >
             <div className="relative">
