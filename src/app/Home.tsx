@@ -76,7 +76,7 @@ export default function Home() {
           <ImageCarousel prevRef={prevRef} nextRef={nextRef} />
         </div>
         <BorderSide />
-        <div className="absolute xl:right-10 xl:top-1/2 xl:-translate-x-1/2 xl:-translate-y-1/2 z-50 bottom-0 translate-y-14 ">
+        <div className="absolute xl:right-10 xl:top-1/2 xl:-translate-x-1/2 xl:-translate-y-1/2 z-50 bottom-0 translate-y-16 ">
           <HoverImageWithTooltip />
         </div>
         <div className="absolute -top-56 lg:top-auto lg:bottom-0 z-50 xl:translate-y-16 xl:-translate-x-8 translate-y-44">
@@ -120,6 +120,13 @@ export default function Home() {
           alt="Char 2"
           className="absolute lg:-bottom-28 lg:z-20 lg:right-0 lg:translate-x-40 scale-75 lg:scale-100 -bottom-96 lg:translate-y-0 translate-x-40 translate-y-28 z-30"
           onLoadingComplete={handleImageLoad}
+        />
+        <Image
+          src="/img/Border-side.png"
+          width={360}
+          height={150}
+          className="absolute bottom-0 -z-10 rotate-90 translate-y-custom-3 opacity-100 lg:opacity-0"
+          alt="border-side"
         />
       </div>
     </>
