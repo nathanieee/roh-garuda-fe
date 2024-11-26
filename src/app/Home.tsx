@@ -46,7 +46,7 @@ export default function Home() {
           width={370}
           height={100}
           alt="Logo Roh Garuda"
-          className="absolute -top-44 lg:top-0 z-20 -translate-y-32 xl:-translate-x-10 shadow-logo scale-125 lg:scale-100"
+          className="absolute -top-44 lg:top-0 z-20 -translate-y-40 xl:-translate-x-10 shadow-logo scale-150 lg:scale-100 lg:-translate-y-32"
         />
         <button
           ref={prevRef}
@@ -125,7 +125,7 @@ export default function Home() {
           src="/img/Border-side.png"
           width={360}
           height={150}
-          className="absolute bottom-0 -z-10 rotate-90 translate-y-custom-3 opacity-100 lg:opacity-0"
+          className="absolute bottom-0 -z-10 rotate-90 translate-y-custom-3 opacity-100 lg:opacity-0 shadow-side"
           alt="border-side"
         />
       </div>
