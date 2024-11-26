@@ -46,7 +46,7 @@ export default function Home() {
           width={370}
           height={100}
           alt="Logo Roh Garuda"
-          className="absolute -top-44 lg:top-0 z-20 -translate-y-40 xl:-translate-x-10 shadow-logo scale-150 lg:scale-100 lg:-translate-y-32"
+          className="absolute -top-44 lg:top-0 z-20 -translate-y-48 xl:-translate-x-10 shadow-logo scale-175 lg:scale-100 lg:-translate-y-32"
         />
         <button
           ref={prevRef}
@@ -87,14 +87,14 @@ export default function Home() {
           width={600}
           height={100}
           alt="Char 1"
-          className="absolute lg:-left-14 z-20 lg:-bottom-36 lg:-translate-x-2/4 lg:translate-y-1/4 -bottom-96 translate-y-custom-2 -translate-x-10"
+          className="absolute lg:-left-14 lg:z-20 lg:-bottom-36 lg:-translate-x-2/4 lg:translate-y-1/4 -bottom-96 translate-y-custom-2 -translate-x-10 z-40"
         />
         <Image
           src="/img/Character-4.png"
           width={410}
           height={100}
           alt="Char 4"
-          className="absolute lg:-left-16 lg:-z-20 lg:bottom-28 lg:-translate-x-2/4 lg:translate-y-1/4 -bottom-96 scale-90 lg:scale-100 translate-y-56 left-0 translate-x-28"
+          className="absolute lg:-left-16 lg:-z-20 lg:bottom-28 lg:-translate-x-2/4 lg:translate-y-1/4 -bottom-96 scale-90 lg:scale-100 translate-y-56 left-0 translate-x-24"
         />
         <Image
           src="/img/Character-5.png"

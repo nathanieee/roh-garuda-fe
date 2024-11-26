@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      scale: {
+        200: "2",
+        175: "1.75",
+      },
       translate: {
         "custom-1": "33rem",
         "custom-2": "30rem",

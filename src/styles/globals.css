@@ -66,6 +66,12 @@ body {
   }
 }
 
+@media (max-width: 1100px) {
+  .wrapper {
+    transform: scale(0.7);
+  }
+}
+
 @media (max-width: 768px) {
   .wrapper {
     transform: scale(0.6);
