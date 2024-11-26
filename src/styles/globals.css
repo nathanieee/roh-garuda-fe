@@ -40,11 +40,10 @@ body {
 }
 
 .shadow-image {
-  box-shadow: -20px 20px 40px 6px rgba(0, 0, 0, 0.9); /* Default shadow */
+  box-shadow: -20px 20px 40px 6px rgba(0, 0, 0, 0.9);
 
   @media (max-width: 1330px) {
-    /* Hide the shadow at the bottom, make top shadow thin */
-    box-shadow: 10px -4px 10px 6px rgba(0, 0, 0, 0.5); /* Right */
+    box-shadow: 10px -4px 10px 6px rgba(0, 0, 0, 0.5);
   }
 
   @media (min-width: 1331px) {
